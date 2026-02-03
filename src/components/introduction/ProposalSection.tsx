@@ -36,7 +36,7 @@ export default function ProposalSection() {
             {/* Secondary Playful Action */}
             <button
               onClick={handleMaybeClick}
-              className="flex mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-22 bg-gray-200 dark:bg-[#48232c] text-gray-700 dark:text-primary text-base font-bold leading-normal border border-red-500/20 hover:scale-[0.98] active:scale-95 transition-all duration-300"
+              className="flex mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-22 bg-gray-200 text-gray-700 text-base font-bold leading-normal border border-red-500/20 hover:scale-[0.98] active:scale-95 transition-all duration-300"
             >
               <span className="truncate">Maybe?</span>
             </button>

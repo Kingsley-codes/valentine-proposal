@@ -37,7 +37,7 @@ export default function PhotoPolaroid({
       {/* <div className="animate-slide-up"> */}
       <div
         className={`
-          bg-white dark:bg-[#2d181e]
+          bg-white
             p-3 pb-8 shadow-xl rounded-sm
             w-full max-w-70 md:max-w-90 lg:max-w-105
             hover:shadow-2xl transition-shadow duration-300
