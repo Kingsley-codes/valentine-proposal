@@ -20,11 +20,11 @@ export default function Message(): React.ReactElement {
           </p>
 
           <div className="mt-8 flex justify-center items-center gap-4 text-primary/60">
-            <IoSparkles className="text-sm text-red-600" />
-            <IoSparkles className="text-sm text-red-600" />
+            <IoSparkles className="text-sm text-orange-300" />
+            <IoSparkles className="text-sm text-orange-300" />
             <p className="text-2xl">❤️</p>
-            <IoSparkles className="text-sm text-red-600" />
-            <IoSparkles className="text-sm text-red-600" />
+            <IoSparkles className="text-sm text-orange-300" />
+            <IoSparkles className="text-sm text-orange-300" />
           </div>
         </div>
         {/* Decorative corner glow */}

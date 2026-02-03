@@ -17,7 +17,7 @@ export default function HeroSection() {
           <div className="mb-4 inline-flex animate-pulse items-center justify-center w-12 h-12 rounded-full bg-pink-600/30 text-primary">
             <FaHeart className="w-6 h-6 text-pink-600" />
           </div>
-          <h1 className="text-white tracking-tight text-4xl font-extrabold leading-tight">
+          <h1 className="text-white tracking-tight text-6xl font-imperial gold-text-gradient leading-tight">
             Hi Josephine
           </h1>
         </div>
