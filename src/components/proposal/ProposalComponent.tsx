@@ -4,7 +4,11 @@ import VisualCenterpiece from "./VisualCenterpiece";
 import Message from "./Message";
 import ProposalSection from "../introduction/ProposalSection";
 
-export default function Proposal() {
+type ProposalProps = {
+  onBack: () => void;
+};
+
+export default function Proposal({ onBack }: ProposalProps) {
   return (
     <>
       <BackgroundLayers />
@@ -13,7 +17,7 @@ export default function Proposal() {
       <div className="relative z-10 flex min-h-screen w-full flex-col items-center justify-between px-4 sm:px-6 py-6 md:py-8 lg:py-12">
         {/* Top Section: Header & Image */}
         <div className="flex w-full flex-col items-center gap-6 md:gap-8 mt-2 md:mt-4">
-          <Header />
+          <Header onBack={onBack} />
           <VisualCenterpiece />
         </div>
 

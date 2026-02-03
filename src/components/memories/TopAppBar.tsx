@@ -4,13 +4,12 @@ import { FaHeart } from "react-icons/fa6";
 import { FaChevronLeft } from "react-icons/fa";
 import { useState } from "react";
 
-export default function TopAppBar() {
-  const [liked, setLiked] = useState(false);
+type TopAppBarProps = {
+  onBack: () => void;
+};
 
-  const handleBack = () => {
-    // In a real app, this would navigate back
-    window.history.back();
-  };
+export default function TopAppBar({ onBack }: TopAppBarProps) {
+  const [liked, setLiked] = useState(false);
 
   const handleLike = () => {
     setLiked(!liked);
@@ -19,11 +18,11 @@ export default function TopAppBar() {
   return (
     <div className="flex items-center backdrop-blur-md sticky top-0 z-50 p-4 pb-2 justify-between">
       <button
-        onClick={handleBack}
+        onClick={onBack}
         className="text-primary flex size-12 shrink-0 items-center justify-start cursor-pointer hover:opacity-80 transition-opacity"
         aria-label="Go back"
       >
-        <FaChevronLeft className="text-xl text-red-500" />
+        <FaChevronLeft className="text-xl text-red-300" />
       </button>
 
       <h2 className="text-primary text-red-200 text-lg md:text-xl leading-tight tracking-[-0.015em] flex-1 text-center">

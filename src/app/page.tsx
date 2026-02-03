@@ -15,13 +15,23 @@ export default function Home() {
     window.scrollTo(0, 0);
   }, [step]);
 
+  const handleNext = () => {
+    if (step === "intro") setStep("memories");
+    else if (step === "memories") setStep("proposal");
+  };
+
+  const handleBack = () => {
+    if (step === "proposal") setStep("memories");
+    else if (step === "memories") setStep("intro");
+  };
+
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-      {step === "intro" && <Introduction onNext={() => setStep("memories")} />}
-
-      {step === "memories" && <Memories onNext={() => setStep("proposal")} />}
-
-      {step === "proposal" && <Proposal />}
+      {step === "intro" && <Introduction onNext={handleNext} />}
+      {step === "memories" && (
+        <Memories onNext={handleNext} onBack={handleBack} />
+      )}
+      {step === "proposal" && <Proposal onBack={handleBack} />}{" "}
     </div>
   );
 }
