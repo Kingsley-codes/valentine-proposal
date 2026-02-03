@@ -40,7 +40,7 @@ const timelinePhotos: Photo[] = [
     caption: '"A night to remember"',
     subtext: "Last year's valentine's day",
     aspectRatio: "portrait",
-    tilt: "left",
+    tilt: "right",
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const timelinePhotos: Photo[] = [
     caption: '"My favorite smile"',
     subtext: "Just because",
     aspectRatio: "square",
-    tilt: "right",
+    tilt: "left",
   },
 ];
 
