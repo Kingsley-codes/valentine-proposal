@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans, Pinyon_Script } from "next/font/google";
+import {
+  Inter,
+  Plus_Jakarta_Sans,
+  Pinyon_Script,
+  Imperial_Script,
+} from "next/font/google";
 import "./globals.css";
 import DecorativeFooter from "@/components/introduction/DecorativeFooter";
 
@@ -16,6 +21,12 @@ const pinyonScript = Pinyon_Script({
   variable: "--font-pinyon-script",
 });
 
+const imperialScript = Imperial_Script({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-imperial-script",
+});
+
 export const metadata: Metadata = {
   title: "For Josephine ❤️",
   description: "A heartfelt Valentine's Day message",
@@ -27,10 +38,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.className} ${pinyonScript.variable} ${plusJakartaSans.variable} antialiased`}
-      >
+    <html
+      lang="en"
+      className={`${pinyonScript.variable} ${imperialScript.variable} ${plusJakartaSans.variable}`}
+    >
+      <body className={`${inter.className} antialiased`}>
         {children}
         <DecorativeFooter />
       </body>

@@ -88,6 +88,11 @@ body {
 @theme {
   --font-pinyon: var(--font-pinyon-script);
   --font-jakarta: var(--font-plus-jakarta);
+  --font-imperial: var(--font-imperial-script);
+}
+
+@utility text-outline-white {
+  -webkit-text-stroke: 1px white;
 }
 
 /* Floating animations */

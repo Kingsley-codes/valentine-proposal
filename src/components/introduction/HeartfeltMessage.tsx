@@ -2,7 +2,11 @@
 import { IoSparkles } from "react-icons/io5";
 import CTAButton from "../memories/CTAButton";
 
-export default function HeartfeltMessage() {
+type Props = {
+  onNext: () => void;
+};
+
+export default function HeartfeltMessage({ onNext }: Props) {
   return (
     <div className="py-10 mx-auto w-full bg-linear-to-b from-pink-950 via-red-950 to-pink-950">
       <div className="flex justify-center mb-6">
@@ -22,7 +26,7 @@ export default function HeartfeltMessage() {
       </div>
 
       <div className="mt-12">
-        <CTAButton />
+        <CTAButton onClick={onNext} />
       </div>
     </div>
   );
