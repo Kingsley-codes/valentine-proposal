@@ -51,7 +51,7 @@ export default function PhotoPolaroid({
           role="img"
           aria-label={altText}
         />
-        <p className="text-[#1b0d11] dark:text-white text-center font-bold italic text-lg md:text-xl">
+        <p className="text-[#1b0d11] text-center font-bold italic text-lg md:text-xl">
           {caption}
         </p>
         <p className="text-[#9b111e] text-xs md:text-sm text-center font-bold uppercase mt-1 tracking-wider">
